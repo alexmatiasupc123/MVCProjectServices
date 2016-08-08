@@ -10,7 +10,7 @@ namespace MVCBolitaServices.Servicio
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in code, svc and config file together.
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
-    public class Service1 : IService1
+    public class ServiceLogin : IServiceLogin
     {
         public string GetData(int value)
         {
@@ -29,5 +29,29 @@ namespace MVCBolitaServices.Servicio
             }
             return composite;
         }
+        public bool ValidateCredentials(string user, string password)
+        {
+            bool result=false;
+
+            if (user.Equals("amatias") && password.Equals("123"))
+                result = true;
+            else
+                result = false;
+
+            return result;
+        }
+
+        public bool ValidateCredentialsNuevo(string user, string password)
+        {
+            bool result = false;
+
+            if (user.Equals("amatias") && password.Equals("123"))
+                result = true;
+            else
+                result = false;
+
+            return result;
+        }
+
     }
 }
