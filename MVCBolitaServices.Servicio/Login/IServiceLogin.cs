@@ -20,7 +20,7 @@ namespace MVCBolitaServices.Servicio
         bool ValidateCredentials(string user,string password);
 
         [OperationContract]
-        string ValidateConnection();
+        string ValidateConnection(int n);
 
         [OperationContract]
         [WebInvoke(

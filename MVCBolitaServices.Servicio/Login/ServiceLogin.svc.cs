@@ -17,9 +17,8 @@ namespace MVCBolitaServices.Servicio
         {
             return string.Format("You entered: {0}", value);
         }
-
-        [OperationContract]
-        public string ValidateConnection()
+                
+        public string ValidateConnection(int n)
         {
             BoManejadorDatosLogin business=new BoManejadorDatosLogin();
 

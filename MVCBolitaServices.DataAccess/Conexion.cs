@@ -22,7 +22,7 @@ namespace MVCBolitaServices.DataAccess
         }
 
         # region "ConectarBOLITABOOK"
-        public MySqlConnection ConectarBRITMOBILE()
+        public MySqlConnection ConectarBOLITABOOK()
         {
             connBOLITABOOK = new MySqlConnection(conncadenaConexionBOLITABOOK);
             try
@@ -59,7 +59,7 @@ namespace MVCBolitaServices.DataAccess
             {
                 MySqlDataAdapter adaptador = new MySqlDataAdapter();
                 MySqlCommand comando = new MySqlCommand();
-                comando.Connection = ConectarBRITMOBILE();
+                comando.Connection = ConectarBOLITABOOK();
                 comando.CommandText = sentencia;
                 comando.CommandType = System.Data.CommandType.StoredProcedure;
                 adaptador.SelectCommand = comando;
@@ -90,7 +90,7 @@ namespace MVCBolitaServices.DataAccess
             {
                 MySqlDataAdapter adaptador = new MySqlDataAdapter();
                 MySqlCommand comando = new MySqlCommand();
-                comando.Connection = ConectarBRITMOBILE();
+                comando.Connection = ConectarBOLITABOOK();
                 comando.CommandText = sentencia;
 
                 Int32 rowsAffected;

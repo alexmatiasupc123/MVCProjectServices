@@ -20,6 +20,7 @@ namespace MVCBolitaServices.DataAccess.Login
             {
                 Conexion.Init(cadenaConexionBOLITABOOK);
                 Conexion objOperacion = new Conexion();
+                objOperacion.ConectarBOLITABOOK();
                 estado=objOperacion.connBOLITABOOK.State.ToString();
             }
             catch (Exception)
