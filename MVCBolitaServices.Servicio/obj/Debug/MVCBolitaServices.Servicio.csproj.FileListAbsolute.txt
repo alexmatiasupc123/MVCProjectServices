@@ -20,3 +20,5 @@ C:\Users\alexander.matias\Desktop\MVCBolita\MVCProjectServices\MVCBolitaServices
 C:\Users\alexander.matias\Desktop\MVCBolita\MVCProjectServices\MVCBolitaServices.Servicio\obj\Debug\MVCBolitaServices.Servicio.csprojResolveAssemblyReference.cache
 C:\Users\alexander.matias\Desktop\MVCBolita\MVCProjectServices\MVCBolitaServices.Servicio\obj\Debug\MVCBolitaServices.Servicio.dll
 C:\Users\alexander.matias\Desktop\MVCBolita\MVCProjectServices\MVCBolitaServices.Servicio\obj\Debug\MVCBolitaServices.Servicio.pdb
+C:\Users\alexander.matias\Desktop\MVCBolita\MVCProjectServices\MVCBolitaServices.Servicio\bin\MySql.Data.dll
+C:\Users\alexander.matias\Desktop\MVCBolita\MVCProjectServices\MVCBolitaServices.Servicio\bin\MySql.Web.dll
