@@ -20,6 +20,9 @@ namespace MVCBolitaServices.Servicio
         bool ValidateCredentials(string user,string password);
 
         [OperationContract]
+        string ValidateConnection();
+
+        [OperationContract]
         [WebInvoke(
                 Method = "POST",
                 UriTemplate = "ValidateCredentialsNuevo",

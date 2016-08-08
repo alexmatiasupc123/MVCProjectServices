@@ -5,6 +5,7 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
+using MVCBolitaServices.Business;
 
 namespace MVCBolitaServices.Servicio
 {
@@ -15,6 +16,14 @@ namespace MVCBolitaServices.Servicio
         public string GetData(int value)
         {
             return string.Format("You entered: {0}", value);
+        }
+
+        [OperationContract]
+        public string ValidateConnection()
+        {
+            BoManejadorDatosLogin business=new BoManejadorDatosLogin();
+
+            return business.ProbarConexion();
         }
 
         public CompositeType GetDataUsingDataContract(CompositeType composite)
