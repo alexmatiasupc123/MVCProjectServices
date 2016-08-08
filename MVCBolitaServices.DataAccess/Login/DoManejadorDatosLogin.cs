@@ -21,7 +21,7 @@ namespace MVCBolitaServices.DataAccess.Login
                 Conexion.Init(cadenaConexionBOLITABOOK);
                 Conexion objOperacion = new Conexion();
                 objOperacion.ConectarBOLITABOOK();
-                estado=objOperacion.connBOLITABOOK.State.ToString();
+                estado="ConnectionState: "+objOperacion.connBOLITABOOK.State.ToString()+" Database: "+objOperacion.connBOLITABOOK.Database+" DataSource: "+objOperacion.connBOLITABOOK.DataSource;
             }
             catch (Exception)
             {
